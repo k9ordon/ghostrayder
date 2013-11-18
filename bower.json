@@ -23,6 +23,7 @@
     "jquery.columnizer": "~1.6.0",
     "Vague.js": "git://github.com/GianlucaGuarini/Vague.js.git#~0.0.2",
     "Blur.js": "git://github.com/jakiestfu/Blur.js.git",
-    "hammerjs": "~1.0.5"
+    "hammerjs": "~1.0.5",
+    "jquery.avgrund": "~1.2.0"
   }
 }
