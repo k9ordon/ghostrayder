@@ -17,6 +17,10 @@ A ghost theme - currently developed for **latest webkit** and ios devices.
 - modern browser support (optimizing Android, Firefox, IE10)
 - resource handling (suspend not displayed articles/imgs
 - overview (article "scrollbar", column index)
+- social icons integration
+
+### Bugfixing
+
 - resize/orientation change handling/bugfixing
 - jquery.columnizer bugfixing
 
