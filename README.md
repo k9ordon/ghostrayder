@@ -19,11 +19,6 @@ A ghost theme - currently developed for **latest webkit** and ios devices.
 - overview (article "scrollbar", column index)
 - social icons integration
 
-### Bugfixing
-
-- resize/orientation change handling/bugfixing
-- jquery.columnizer bugfixing
-
 ## Screenshots
 
 ![Header Screenshot](/screens/header.png)
@@ -43,6 +38,11 @@ based on npm, grunt & bower
     bower install
     grunt
     grunt watch
+
+### Bugfixing
+
+- resize/orientation change handling/bugfixing
+- jquery.columnizer bugfixing
 
 ## Credits
 - jquery-mousewheel
