@@ -4,7 +4,7 @@ A ghost theme
 
 ![Header Screenshot](/screens/header.png)
 ![Article Screenshot](/screens/article.png)
-![Article Tip Screenshot](/screens/articleTip.png)
+![Article Read Screenshot](/screens/read.png)
 
 # Develop
 based on npm, grunt & bower 
