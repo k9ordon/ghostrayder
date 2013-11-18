@@ -92,7 +92,8 @@ body, html {
   padding: 0;
   background: black;
   position: relative;
-  overflow: hidden; }
+  overflow: hidden;
+  cursor: move; }
 
 ::-webkit-scrollbar {
   width: 40px;
@@ -471,7 +472,8 @@ body > main {
         max-width: 100%;
         max-height: 80%;
         -webkit-transition: -webkit-transform 0.3s, box-shadow 0.3s;
-        -webkit-transform: scale(1); }
+        -webkit-transform: scale(1);
+        cursor: pointer; }
         body > main > article > .column-content img:hover {
           -webkit-transform: scale(1.1); }
     body > main > article > .entry {
