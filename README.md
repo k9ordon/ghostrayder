@@ -1,12 +1,12 @@
 # Ghost Rayder 0.5
 
-A ghost theme
+A ghost theme - currently developed for latest webkit and ios devices.
 
 ![Header Screenshot](/screens/header.png)
 ![Article Screenshot](/screens/article.png)
 ![Article Read Screenshot](/screens/read.png)
 
-# Develop
+## Develop
 based on npm, grunt & bower 
     
     npm install
@@ -14,7 +14,7 @@ based on npm, grunt & bower
     grunt
     grunt watch
 
-# Credits
+## Credits
 - jquery-mousewheel
 - Background-Check
 - jquery.hotkeys
@@ -30,3 +30,8 @@ based on npm, grunt & bower
 - nodejs
 - git
 - [Wells Riley](http://blog.wells.ee/dribbble/)
+
+## Externals
+
+- [![Dependency Status](https://gemnasium.com/k9ordon/ghostrayder.png)](https://gemnasium.com/k9ordon/ghostrayder)
+- [coffeedoc Documentation](http://coffeedoc.info/github/k9ordon/ghostrayder/master/)
