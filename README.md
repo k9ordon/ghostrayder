@@ -6,6 +6,10 @@ A ghost theme - currently developed for latest webkit and ios devices.
 ![Article Screenshot](/screens/article.png)
 ![Article Read Screenshot](/screens/read.png)
 
+![Header iPhone Sized Screenshot](/screens/header_mobile.png)
+![Article iPhone Sized Screenshot](/screens/article_mobile.png)
+![Article iPhone Sized Read Screenshot](/screens/read_mobile.png)
+
 ## Develop
 based on npm, grunt & bower 
     
