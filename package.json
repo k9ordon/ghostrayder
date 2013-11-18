@@ -1,0 +1,25 @@
+{
+  "name": "Ghostrayder",
+  "version": "0.5.0",
+  "description": "A ghost theme",
+  "main": "Gruntfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ghost",
+    "theme",
+    "rayder theme"
+  ],
+
+  "author": "k9ordon",
+  "license": "BSD-2-Clause",
+
+  "devDependencies": {
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt-contrib-coffee": "~0.7.0",
+    "grunt-sass": "~0.7.0",
+    "grunt-contrib-concat": "~0.3.0",
+    "grunt-contrib-uglify": "~0.2.7"
+  }
+}

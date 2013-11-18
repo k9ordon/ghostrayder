@@ -1,0 +1,117 @@
+*, *:before, *:after {
+    -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    margin:0;
+    padding:0;
+    background: black;
+    position:relative;
+    overflow: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 40px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background:black;
+}
+ 
+::-webkit-scrollbar-thumb {
+    background: rgba(255,0,0,1); 
+}
+
+::-webkit-scrollbar-thumb:window-inactive {
+    background: rgba(255,0,0,0.1); 
+}
+
+html {
+    //overflow: auto;
+}
+
+body {
+    //overflow-y: scroll;
+    background-position:top center;
+    background-size:cover;
+    -webkit-text-size-adjust: 100%;
+}
+
+@-webkit-keyframes loadingAnimation {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% { 
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+body > #loading {
+    position: fixed;
+    top:50%;
+    left:50%;
+    margin-top:-20px;
+    margin-left:-10px;
+    //-webkit-transform-origin: 0px 10px;
+    font-size: 40px;
+    font-weight: 100;
+    color: white;
+    -webkit-transition: -webkit-transform 1s, opacity 1s;
+    -webkit-transform: scale(1);
+    opacity: 1;
+    -webkit-animation: loadingAnimation 30s linear 0 infinite normal;
+}
+
+body.ready > #loading {
+    opacity: 0;
+    -webkit-transform: scale(0.5);
+}
+
+body > header, body > main {
+    opacity: 0;
+    -webkit-transition: -webkit-transform 0.6s, opacity 1s;
+}
+
+body.ready > header, body.ready > main {
+    opacity: 1;
+}
+
+
+
+a {
+
+}
+
+.bc {
+    &.background--dark {
+        color:white!important;
+        border-color:white!important;
+        text-shadow: 0px 1px 4px rgba(black,0.8);
+    }
+    &.background--light {
+        color:black!important;
+        border-color:black!important;
+        text-shadow: 0px 1px 4px rgba(white,0.8);
+    }
+    
+    //border:1px solid red;
+}
+
+.avgrund-overlay {
+    z-index: 900;
+    position: absolute;
+    top: 0;
+
+}
+
+.avgrundImgHolder {
+    .imgHolder {
+        position: absolute;
+        top:0; left:0; right:0; bottom:0;
+        background-size:cover;
+        background-position: center center; 
+    }
+}

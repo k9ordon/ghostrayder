@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+
+    <meta name="viewport" content="user-scalable=no, width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+    <style type="text/css">
+
+        /* font */
+
+        @import url(http://fonts.googleapis.com/css?family=Lato:100,400,900);
+
+        body {
+            font-family: 'Lato', sans-serif;
+            font-size: 16px;
+            line-height: 24px;
+            font-weight: 400;
+        }
+
+        h1, h2 {
+            font-weight: 800;
+        }
+
+        *, *:before, *:after {
+            -moz-box-sizing: border-box; 
+            -webkit-box-sizing: border-box; box-sizing: border-box;
+        }
+
+        body, html {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            background: black;
+        }
+
+        body {
+            overflow: scroll;
+        }
+
+        nav {
+            position: fixed;
+            top: 0;
+            height: 60px;
+            background: rgba(255,255,255,0.99);
+            width: 100%;
+            z-index: 100;
+        }
+
+        nav h1 {
+            line-height: 60px;
+            font-size: 20px;
+            margin: 0;
+            padding: 0 10%;
+        }
+
+        header, footer {
+            line-height: 100px;
+            background: gray;
+            display: none;
+        }
+
+        article {
+            position: relative;
+            height: 100%;
+            width: 100%;
+            overflow: hidden;
+            -webkit-transition: -webkit-transform 0.3s;
+            -webkit-transition-delay: 0.3s;
+            -webkit-transform: scale(0.95);
+        }
+
+        article.activeArticle {
+            -webkit-transform: scale(1);
+        }
+
+        article:nth-child(odd) {
+            background: rgb(250,250,250);
+        }
+        article:nth-child(even) {
+            background: rgb(255,255,255);
+        }
+
+        article h2 {
+            position: absolute;
+            top:0%;
+            left: 10%;
+
+            margin: 0;
+            padding: 8% 0 0; 
+        }
+
+        article .text {
+            position: absolute;
+            top:50px;
+            left:0;
+            overflow: hidden;
+
+            width: 100%;
+
+            padding:10%;
+
+            -webkit-column-width: 300px; 
+            -webkit-column-gap: 100px;
+
+            height: 100%;
+        }
+
+        article .text p {
+            margin:0 0 15px;
+        }
+
+        article .text p img {
+            max-width: 100%;
+            max-height: 100%;
+            margin:0 0 15px;
+        }
+
+        article .bg {
+            display: none;
+            position: absolute;
+            top:0;
+            left:0;
+            min-height: 100%;
+            min-width: 100%;
+            -webkit-filter: blur(10px);
+            opacity: 0.4;
+        }
+
+        #pageFooter {
+            display: block;
+            height: 400px;
+            color:white;
+            background: black;
+            text-align: center;
+        }
+
+        #pageFooter span {
+            font-size: 24px;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <nav>
+        <h1>Ghost</h1>
+    </nav>
+
+    <article>
+        <h2>Post Title 1</h2>
+        <div class="text">
+            <p> Look at that, it's exactly three seconds before I honk your nose and pull your underwear over your head. We're going for a ride on the information super highway. I just heard about evans new position,good luck to you evan backstabber, bastard, i mean baxter. Look ma i'm road kill It's because i'm green isn't it! Brain freeze. Look at that, it's exactly three seconds before I honk your nose and pull your underwear over your head. Alrighty Then Alrighty Then Hey, maybe I will give you a call sometime. Your number still 911? We got no food we got no money and our pets heads are falling off! Haaaaaaarry. Your entrance was good, his was better. </p><p> Look ma i'm road kill Here she comes to wreck the day. Your entrance was good, his was better. Look ma i'm road kill Brain freeze. Good Morning, oh in case I don't see you, good afternoon, good evening and goodnight. Good Morning, oh in case I don't see you, good afternoon, good evening and goodnight. Look at that, it's exactly three seconds before I honk your nose and pull your underwear over your head. We're going for a ride on the information super highway. Alrighty Then Your entrance was good, his was better. Kinda hot in these rhinos. </p><p> Kinda hot in these rhinos. Excuse me, I'd like to ASS you a few questions. We're going for a ride on the information super highway. Hey, maybe I will give you a call sometime. Your number still 911? Excuse me, I'd like to ASS you a few questions. We got no food we got no money and our pets heads are falling off! Haaaaaaarry. We got no food we got no money and our pets heads are falling off! Haaaaaaarry. Excuse me, I'd like to ASS you a few questions. Here she comes to wreck the day. Hey, maybe I will give you a call sometime. Your number still 911? It's because i'm green isn't it! It's because i'm green isn't it! </p><p> Good Morning, oh in case I don't see you, good afternoon, good evening and goodnight. Brain freeze. I just heard about evans new position,good luck to you evan backstabber, bastard, i mean baxter. I just heard about evans new position,good luck to you evan backstabber, bastard, i mean baxter. Here she comes to wreck the day. Kinda hot in these rhinos. </p><p> Look at that, it's exactly three seconds before I honk your nose and pull your underwear over your head. We're going for a ride on the information super highway. I just heard about evans new position,good luck to you evan backstabber, bastard, i mean baxter. Look ma i'm road kill It's because i'm green isn't it! Brain freeze. Look at that, it's exactly three seconds before I honk your nose and pull your underwear over your head. Alrighty Then Alrighty Then Hey, maybe I will give you a call sometime. Your number still 911? We got no food we got no money and our pets heads are falling off! Haaaaaaarry. Your entrance was good, his was better. </p><p> Look ma i'm road kill Here she comes to wreck the day. Your entrance was good, his was better. Look ma i'm road kill Brain freeze. Good Morning, oh in case I don't see you, good afternoon, good evening and goodnight. Good Morning, oh in case I don't see you, good afternoon, good evening and goodnight. Look at that, it's exactly three seconds before I honk your nose and pull your underwear over your head. We're going for a ride on the information super highway. Alrighty Then Your entrance was good, his was better. Kinda hot in these rhinos. </p><p> Kinda hot in these rhinos. Excuse me, I'd like to ASS you a few questions. We're going for a ride on the information super highway. Hey, maybe I will give you a call sometime. Your number still 911? Excuse me, I'd like to ASS you a few questions. We got no food we got no money and our pets heads are falling off! Haaaaaaarry. We got no food we got no money and our pets heads are falling off! Haaaaaaarry. Excuse me, I'd like to ASS you a few questions. Here she comes to wreck the day. Hey, maybe I will give you a call sometime. Your number still 911? It's because i'm green isn't it! It's because i'm green isn't it! </p><p> Good Morning, oh in case I don't see you, good afternoon, good evening and goodnight. Brain freeze. I just heard about evans new position,good luck to you evan backstabber, bastard, i mean baxter. I just heard about evans new position,good luck to you evan backstabber, bastard, i mean baxter. Here she comes to wreck the day. Kinda hot in these rhinos. </p>
+            <p> Look at that, it's exactly three seconds before I honk your nose and pull your underwear over your head. We're going for a ride on the information super highway. I just heard about evans new position,good luck to you evan backstabber, bastard, i mean baxter. Look ma i'm road kill It's because i'm green isn't it! Brain freeze. Look at that, it's exactly three seconds before I honk your nose and pull your underwear over your head. Alrighty Then Alrighty Then Hey, maybe I will give you a call sometime. Your number still 911? We got no food we got no money and our pets heads are falling off! Haaaaaaarry. Your entrance was good, his was better. </p><p> Look ma i'm road kill Here she comes to wreck the day. Your entrance was good, his was better. Look ma i'm road kill Brain freeze. Good Morning, oh in case I don't see you, good afternoon, good evening and goodnight. Good Morning, oh in case I don't see you, good afternoon, good evening and goodnight. Look at that, it's exactly three seconds before I honk your nose and pull your underwear over your head. We're going for a ride on the information super highway. Alrighty Then Your entrance was good, his was better. Kinda hot in these rhinos. </p><p> Kinda hot in these rhinos. Excuse me, I'd like to ASS you a few questions. We're going for a ride on the information super highway. Hey, maybe I will give you a call sometime. Your number still 911? Excuse me, I'd like to ASS you a few questions. We got no food we got no money and our pets heads are falling off! Haaaaaaarry. We got no food we got no money and our pets heads are falling off! Haaaaaaarry. Excuse me, I'd like to ASS you a few questions. Here she comes to wreck the day. Hey, maybe I will give you a call sometime. Your number still 911? It's because i'm green isn't it! It's because i'm green isn't it! </p><p> Good Morning, oh in case I don't see you, good afternoon, good evening and goodnight. Brain freeze. I just heard about evans new position,good luck to you evan backstabber, bastard, i mean baxter. I just heard about evans new position,good luck to you evan backstabber, bastard, i mean baxter. Here she comes to wreck the day. Kinda hot in these rhinos. </p>
+        </div>
+    </article>
+
+
+    <header>
+        <h2>Post Title 2</h2>
+    </header>
+
+    <footer>
+        <h2>Post Title 1</h2>
+    </footer>
+
+
+    <article>
+        <img class="bg" src="bg1.jpg">
+        <h2>Post Title 2</h2>
+        <div class="text">
+            <p> <img src="bg1.jpg"> Look at that, it's exactly three seconds before I honk your nose and pull your underwear over your head. We're going for a ride on the information super highway. I just heard about evans new position,good luck to you evan backstabber, bastard, i mean baxter. Look ma i'm road kill It's because i'm green isn't it! Brain freeze. Look at that, it's exactly three seconds before I honk your nose and pull your underwear over your head. Alrighty Then Alrighty Then Hey, maybe I will give you a call sometime. Your number still 911? We got no food we got no money and our pets heads are falling off! Haaaaaaarry. Your entrance was good, his was better. </p><p> Look ma i'm road kill Here she comes to wreck the day. Your entrance was good, his was better. Look ma i'm road kill Brain freeze. Good Morning, oh in case I don't see you, good afternoon, good evening and goodnight. Good Morning, oh in case I don't see you, good afternoon, good evening and goodnight. Look at that, it's exactly three seconds before I honk your nose and pull your underwear over your head. We're going for a ride on the information super highway. Alrighty Then Your entrance was good, his was better. Kinda hot in these rhinos. </p><p> Kinda hot in these rhinos. Excuse me, I'd like to ASS you a few questions. We're going for a ride on the information super highway. Hey, maybe I will give you a call sometime. Your number still 911? Excuse me, I'd like to ASS you a few questions. We got no food we got no money and our pets heads are falling off! Haaaaaaarry. We got no food we got no money and our pets heads are falling off! Haaaaaaarry. Excuse me, I'd like to ASS you a few questions. Here she comes to wreck the day. Hey, maybe I will give you a call sometime. Your number still 911? It's because i'm green isn't it! It's because i'm green isn't it! </p><p> Good Morning, oh in case I don't see you, good afternoon, good evening and goodnight. Brain freeze. I just heard about evans new position,good luck to you evan backstabber, bastard, i mean baxter. I just heard about evans new position,good luck to you evan backstabber, bastard, i mean baxter. Here she comes to wreck the day. Kinda hot in these rhinos. </p><p> Look at that, it's exactly three seconds before I honk your nose and pull your underwear over your head. We're going for a ride on the information super highway. I just heard about evans new position,good luck to you evan backstabber, bastard, i mean baxter. Look ma i'm road kill It's because i'm green isn't it! Brain freeze. Look at that, it's exactly three seconds before I honk your nose and pull your underwear over your head. Alrighty Then Alrighty Then Hey, maybe I will give you a call sometime. Your number still 911? We got no food we got no money and our pets heads are falling off! Haaaaaaarry. Your entrance was good, his was better. </p><p> Look ma i'm road kill Here she comes to wreck the day. Your entrance was good, his was better. Look ma i'm road kill Brain freeze. Good Morning, oh in case I don't see you, good afternoon, good evening and goodnight. Good Morning, oh in case I don't see you, good afternoon, good evening and goodnight. Look at that, it's exactly three seconds before I honk your nose and pull your underwear over your head. We're going for a ride on the information super highway. Alrighty Then Your entrance was good, his was better. Kinda hot in these rhinos. </p><p> Kinda hot in these rhinos. Excuse me, I'd like to ASS you a few questions. We're going for a ride on the information super highway. Hey, maybe I will give you a call sometime. Your number still 911? Excuse me, I'd like to ASS you a few questions. We got no food we got no money and our pets heads are falling off! Haaaaaaarry. We got no food we got no money and our pets heads are falling off! Haaaaaaarry. Excuse me, I'd like to ASS you a few questions. Here she comes to wreck the day. Hey, maybe I will give you a call sometime. Your number still 911? It's because i'm green isn't it! It's because i'm green isn't it! </p><p> Good Morning, oh in case I don't see you, good afternoon, good evening and goodnight. Brain freeze. I just heard about evans new position,good luck to you evan backstabber, bastard, i mean baxter. I just heard about evans new position,good luck to you evan backstabber, bastard, i mean baxter. Here she comes to wreck the day. Kinda hot in these rhinos. </p>
+            <p> Look at that, it's exactly three seconds before I honk your nose and pull your underwear over your head. We're going for a ride on the information super highway. I just heard about evans new position,good luck to you evan backstabber, bastard, i mean baxter. Look ma i'm road kill It's because i'm green isn't it! Brain freeze. Look at that, it's exactly three seconds before I honk your nose and pull your underwear over your head. Alrighty Then Alrighty Then Hey, maybe I will give you a call sometime. Your number still 911? We got no food we got no money and our pets heads are falling off! Haaaaaaarry. Your entrance was good, his was better. </p><p> Look ma i'm road kill Here she comes to wreck the day. Your entrance was good, his was better. Look ma i'm road kill Brain freeze. Good Morning, oh in case I don't see you, good afternoon, good evening and goodnight. Good Morning, oh in case I don't see you, good afternoon, good evening and goodnight. Look at that, it's exactly three seconds before I honk your nose and pull your underwear over your head. We're going for a ride on the information super highway. Alrighty Then Your entrance was good, his was better. Kinda hot in these rhinos. </p><p> Kinda hot in these rhinos. Excuse me, I'd like to ASS you a few questions. We're going for a ride on the information super highway. Hey, maybe I will give you a call sometime. Your number still 911? Excuse me, I'd like to ASS you a few questions. We got no food we got no money and our pets heads are falling off! Haaaaaaarry. We got no food we got no money and our pets heads are falling off! Haaaaaaarry. Excuse me, I'd like to ASS you a few questions. Here she comes to wreck the day. Hey, maybe I will give you a call sometime. Your number still 911? It's because i'm green isn't it! It's because i'm green isn't it! </p><p> Good Morning, oh in case I don't see you, good afternoon, good evening and goodnight. Brain freeze. I just heard about evans new position,good luck to you evan backstabber, bastard, i mean baxter. I just heard about evans new position,good luck to you evan backstabber, bastard, i mean baxter. Here she comes to wreck the day. Kinda hot in these rhinos. </p>
+        </div>
+    </article>
+
+    <header>
+        <h2>Post Title 3</h2>
+    </header>
+
+    <footer>
+        <h2>Post Title 2</h2>
+    </footer>
+
+
+
+    <article>
+        <h2>Post Title 3</h2>
+        <div class="text">
+            <p> Look at that, it's exactly three seconds before I honk your nose and pull your underwear over your head. We're going for a ride on the information super highway. I just heard about evans new position,good luck to you evan backstabber, bastard, i mean baxter. Look ma i'm road kill It's because i'm green isn't it! Brain freeze. Look at that, it's exactly three seconds before I honk your nose and pull your underwear over your head. Alrighty Then Alrighty Then Hey, maybe I will give you a call sometime. Your number still 911? We got no food we got no money and our pets heads are falling off! Haaaaaaarry. Your entrance was good, his was better. </p><p> Look ma i'm road kill Here she comes to wreck the day. Your entrance was good, his was better. Look ma i'm road kill Brain freeze. Good Morning, oh in case I don't see you, good afternoon, good evening and goodnight. Good Morning, oh in case I don't see you, good afternoon, good evening and goodnight. Look at that, it's exactly three seconds before I honk your nose and pull your underwear over your head. We're going for a ride on the information super highway. Alrighty Then Your entrance was good, his was better. Kinda hot in these rhinos. </p><p> Kinda hot in these rhinos. Excuse me, I'd like to ASS you a few questions. We're going for a ride on the information super highway. Hey, maybe I will give you a call sometime. Your number still 911? Excuse me, I'd like to ASS you a few questions. We got no food we got no money and our pets heads are falling off! Haaaaaaarry. We got no food we got no money and our pets heads are falling off! Haaaaaaarry. Excuse me, I'd like to ASS you a few questions. Here she comes to wreck the day. Hey, maybe I will give you a call sometime. Your number still 911? It's because i'm green isn't it! It's because i'm green isn't it! </p><p> Good Morning, oh in case I don't see you, good afternoon, good evening and goodnight. Brain freeze. I just heard about evans new position,good luck to you evan backstabber, bastard, i mean baxter. I just heard about evans new position,good luck to you evan backstabber, bastard, i mean baxter. Here she comes to wreck the day. Kinda hot in these rhinos. </p><p> Look at that, it's exactly three seconds before I honk your nose and pull your underwear over your head. We're going for a ride on the information super highway. I just heard about evans new position,good luck to you evan backstabber, bastard, i mean baxter. Look ma i'm road kill It's because i'm green isn't it! Brain freeze. Look at that, it's exactly three seconds before I honk your nose and pull your underwear over your head. Alrighty Then Alrighty Then Hey, maybe I will give you a call sometime. Your number still 911? We got no food we got no money and our pets heads are falling off! Haaaaaaarry. Your entrance was good, his was better. </p><p> Look ma i'm road kill Here she comes to wreck the day. Your entrance was good, his was better. Look ma i'm road kill Brain freeze. Good Morning, oh in case I don't see you, good afternoon, good evening and goodnight. Good Morning, oh in case I don't see you, good afternoon, good evening and goodnight. Look at that, it's exactly three seconds before I honk your nose and pull your underwear over your head. We're going for a ride on the information super highway. Alrighty Then Your entrance was good, his was better. Kinda hot in these rhinos. </p><p> Kinda hot in these rhinos. Excuse me, I'd like to ASS you a few questions. We're going for a ride on the information super highway. Hey, maybe I will give you a call sometime. Your number still 911? Excuse me, I'd like to ASS you a few questions. We got no food we got no money and our pets heads are falling off! Haaaaaaarry. We got no food we got no money and our pets heads are falling off! Haaaaaaarry. Excuse me, I'd like to ASS you a few questions. Here she comes to wreck the day. Hey, maybe I will give you a call sometime. Your number still 911? It's because i'm green isn't it! It's because i'm green isn't it! </p><p> Good Morning, oh in case I don't see you, good afternoon, good evening and goodnight. Brain freeze. I just heard about evans new position,good luck to you evan backstabber, bastard, i mean baxter. I just heard about evans new position,good luck to you evan backstabber, bastard, i mean baxter. Here she comes to wreck the day. Kinda hot in these rhinos. </p>
+            <p> Look at that, it's exactly three seconds before I honk your nose and pull your underwear over your head. We're going for a ride on the information super highway. I just heard about evans new position,good luck to you evan backstabber, bastard, i mean baxter. Look ma i'm road kill It's because i'm green isn't it! Brain freeze. Look at that, it's exactly three seconds before I honk your nose and pull your underwear over your head. Alrighty Then Alrighty Then Hey, maybe I will give you a call sometime. Your number still 911? We got no food we got no money and our pets heads are falling off! Haaaaaaarry. Your entrance was good, his was better. </p><p> Look ma i'm road kill Here she comes to wreck the day. Your entrance was good, his was better. Look ma i'm road kill Brain freeze. Good Morning, oh in case I don't see you, good afternoon, good evening and goodnight. Good Morning, oh in case I don't see you, good afternoon, good evening and goodnight. Look at that, it's exactly three seconds before I honk your nose and pull your underwear over your head. We're going for a ride on the information super highway. Alrighty Then Your entrance was good, his was better. Kinda hot in these rhinos. </p><p> Kinda hot in these rhinos. Excuse me, I'd like to ASS you a few questions. We're going for a ride on the information super highway. Hey, maybe I will give you a call sometime. Your number still 911? Excuse me, I'd like to ASS you a few questions. We got no food we got no money and our pets heads are falling off! Haaaaaaarry. We got no food we got no money and our pets heads are falling off! Haaaaaaarry. Excuse me, I'd like to ASS you a few questions. Here she comes to wreck the day. Hey, maybe I will give you a call sometime. Your number still 911? It's because i'm green isn't it! It's because i'm green isn't it! </p><p> Good Morning, oh in case I don't see you, good afternoon, good evening and goodnight. Brain freeze. I just heard about evans new position,good luck to you evan backstabber, bastard, i mean baxter. I just heard about evans new position,good luck to you evan backstabber, bastard, i mean baxter. Here she comes to wreck the day. Kinda hot in these rhinos. </p>
+        </div>
+    </article>
+
+    <header>
+        <h2>Post Title 4</h2>
+    </header>
+
+    <footer>
+        <h2>Post Title 3</h2>
+    </footer>
+
+
+    <article>
+        <h2>Post Title 4</h2>
+        <div class="text">
+            <p> Look at that, it's exactly three seconds before I honk your nose and pull your underwear over your head. We're going for a ride on the information super highway. I just heard about evans new position,good luck to you evan backstabber, bastard, i mean baxter. Look ma i'm road kill It's because i'm green isn't it! Brain freeze. Look at that, it's exactly three seconds before I honk your nose and pull your underwear over your head. Alrighty Then Alrighty Then Hey, maybe I will give you a call sometime. Your number still 911? We got no food we got no money and our pets heads are falling off! Haaaaaaarry. Your entrance was good, his was better. </p><p> Look ma i'm road kill Here she comes to wreck the day. Your entrance was good, his was better. Look ma i'm road kill Brain freeze. Good Morning, oh in case I don't see you, good afternoon, good evening and goodnight. Good Morning, oh in case I don't see you, good afternoon, good evening and goodnight. Look at that, it's exactly three seconds before I honk your nose and pull your underwear over your head. We're going for a ride on the information super highway. Alrighty Then Your entrance was good, his was better. Kinda hot in these rhinos. </p><p> Kinda hot in these rhinos. Excuse me, I'd like to ASS you a few questions. We're going for a ride on the information super highway. Hey, maybe I will give you a call sometime. Your number still 911? Excuse me, I'd like to ASS you a few questions. We got no food we got no money and our pets heads are falling off! Haaaaaaarry. We got no food we got no money and our pets heads are falling off! Haaaaaaarry. Excuse me, I'd like to ASS you a few questions. Here she comes to wreck the day. Hey, maybe I will give you a call sometime. Your number still 911? It's because i'm green isn't it! It's because i'm green isn't it! </p><p> Good Morning, oh in case I don't see you, good afternoon, good evening and goodnight. Brain freeze. I just heard about evans new position,good luck to you evan backstabber, bastard, i mean baxter. I just heard about evans new position,good luck to you evan backstabber, bastard, i mean baxter. Here she comes to wreck the day. Kinda hot in these rhinos. </p><p> Look at that, it's exactly three seconds before I honk your nose and pull your underwear over your head. We're going for a ride on the information super highway. I just heard about evans new position,good luck to you evan backstabber, bastard, i mean baxter. Look ma i'm road kill It's because i'm green isn't it! Brain freeze. Look at that, it's exactly three seconds before I honk your nose and pull your underwear over your head. Alrighty Then Alrighty Then Hey, maybe I will give you a call sometime. Your number still 911? We got no food we got no money and our pets heads are falling off! Haaaaaaarry. Your entrance was good, his was better. </p><p> Look ma i'm road kill Here she comes to wreck the day. Your entrance was good, his was better. Look ma i'm road kill Brain freeze. Good Morning, oh in case I don't see you, good afternoon, good evening and goodnight. Good Morning, oh in case I don't see you, good afternoon, good evening and goodnight. Look at that, it's exactly three seconds before I honk your nose and pull your underwear over your head. We're going for a ride on the information super highway. Alrighty Then Your entrance was good, his was better. Kinda hot in these rhinos. </p><p> Kinda hot in these rhinos. Excuse me, I'd like to ASS you a few questions. We're going for a ride on the information super highway. Hey, maybe I will give you a call sometime. Your number still 911? Excuse me, I'd like to ASS you a few questions. We got no food we got no money and our pets heads are falling off! Haaaaaaarry. We got no food we got no money and our pets heads are falling off! Haaaaaaarry. Excuse me, I'd like to ASS you a few questions. Here she comes to wreck the day. Hey, maybe I will give you a call sometime. Your number still 911? It's because i'm green isn't it! It's because i'm green isn't it! </p><p> Good Morning, oh in case I don't see you, good afternoon, good evening and goodnight. Brain freeze. I just heard about evans new position,good luck to you evan backstabber, bastard, i mean baxter. I just heard about evans new position,good luck to you evan backstabber, bastard, i mean baxter. Here she comes to wreck the day. Kinda hot in these rhinos. </p>
+            <p> Look at that, it's exactly three seconds before I honk your nose and pull your underwear over your head. We're going for a ride on the information super highway. I just heard about evans new position,good luck to you evan backstabber, bastard, i mean baxter. Look ma i'm road kill It's because i'm green isn't it! Brain freeze. Look at that, it's exactly three seconds before I honk your nose and pull your underwear over your head. Alrighty Then Alrighty Then Hey, maybe I will give you a call sometime. Your number still 911? We got no food we got no money and our pets heads are falling off! Haaaaaaarry. Your entrance was good, his was better. </p><p> Look ma i'm road kill Here she comes to wreck the day. Your entrance was good, his was better. Look ma i'm road kill Brain freeze. Good Morning, oh in case I don't see you, good afternoon, good evening and goodnight. Good Morning, oh in case I don't see you, good afternoon, good evening and goodnight. Look at that, it's exactly three seconds before I honk your nose and pull your underwear over your head. We're going for a ride on the information super highway. Alrighty Then Your entrance was good, his was better. Kinda hot in these rhinos. </p><p> Kinda hot in these rhinos. Excuse me, I'd like to ASS you a few questions. We're going for a ride on the information super highway. Hey, maybe I will give you a call sometime. Your number still 911? Excuse me, I'd like to ASS you a few questions. We got no food we got no money and our pets heads are falling off! Haaaaaaarry. We got no food we got no money and our pets heads are falling off! Haaaaaaarry. Excuse me, I'd like to ASS you a few questions. Here she comes to wreck the day. Hey, maybe I will give you a call sometime. Your number still 911? It's because i'm green isn't it! It's because i'm green isn't it! </p><p> Good Morning, oh in case I don't see you, good afternoon, good evening and goodnight. Brain freeze. I just heard about evans new position,good luck to you evan backstabber, bastard, i mean baxter. I just heard about evans new position,good luck to you evan backstabber, bastard, i mean baxter. Here she comes to wreck the day. Kinda hot in these rhinos. </p>
+        </div>
+    </article>
+
+    <footer>
+        <h2>Post Title 1</h2>
+    </footer>
+
+    <footer id="pageFooter">
+        <span>&#10177;</span>
+        ghostrider
+    </footer>
+
+
+    <script>
+
+        // constructor
+
+        var $articles = document.querySelectorAll('article'),
+            articlesLength = $articles.length,
+            bodyScrollPoints = [],
+            bodyScrollPointsLength = 0,
+            bodyScrollTimeout = null,
+            bodyHeight = document.body.offsetHeight,
+            articleScrollTimeout = null,
+            autoscroll = false;
+
+        console.log($articles);
+
+        // functions
+
+        function scrollTo(element, to, duration, directionLeft) {
+            console.log('scrollto');
+
+            if (duration <= 0) {
+                autoscroll = false;
+            }
+            if (duration < 0) return;
+
+            autoscroll = true;
+
+            var difference = to - element.scrollTop;
+            var perTick = difference / duration * 10;
+
+            setTimeout(function() {
+                console.log('scrollTo timeout', directionLeft ? 'left' : 'top', element.scrollTop + perTick, duration);
+                if(directionLeft) {
+                    var nextScrollTo = element.scrollLeft + perTick;
+                    if(!isNaN(nextScrollTo)) {
+                        element.scrollLeft = element.scrollLeft + perTick;
+                        scrollTo(element, to, duration - 10, directionLeft);
+                    }
+                } else {
+                    var nextScrollTo = element.scrollTop + perTick;
+                    if(!isNaN(nextScrollTo)) {
+                        element.scrollTop = element.scrollTop + perTick;
+                        scrollTo(element, to, duration - 10, directionLeft);
+                    }
+                }
+                if(duration-10 <= 0) {
+                    autoscroll = false;
+                }
+            }, 10);
+        }
+
+        // articles
+
+        for(var i = 0; i < articlesLength; i++) {
+            var $article = $articles[i];
+
+            $article.querySelector('.text').addEventListener('scroll', function(e){
+                var $currentArticle = this,
+                    articleScrollLeft = this.scrollLeft;
+                /*
+                clearTimeout(articleScrollTimeout);
+                articleScrollTimeout = setTimeout(function() {
+                    var articleSnap = Math.ceil((articleScrollLeft-150) / 300) * 300;
+
+                    console.log('article timeput', $currentArticle, articleSnap);
+                    scrollTo($currentArticle, articleSnap, 100, true);
+                },1000);
+                */
+
+                console.log('article scroll', articleScrollLeft);
+            });
+
+            bodyScrollPoints.push($article.offsetTop);
+            console.log($article, $article.offsetTop);
+        }
+        bodyScrollPointsLength = bodyScrollPoints.length;
+
+        // body events
+
+        document.addEventListener('scroll', function(e){
+            console.log('scroll', autoscroll);
+            if(autoscroll == true) return;
+
+            var scrollTop = document.body.scrollTop;
+
+            var currentBodyScrollPoint = 0;
+            for(var i = 0; i < bodyScrollPointsLength; i++) {
+                //console.log(scrollTop, bodyScrollPoints[i], scrollTop > bodyScrollPoints[i]);
+                if(scrollTop >= bodyScrollPoints[i] - (bodyHeight / 2)) {
+                    currentBodyScrollPoint = bodyScrollPoints[i];
+                    var currentActiveArticle = document.querySelector('.activeArticle');
+                    currentActiveArticle ? currentActiveArticle.classList.remove('activeArticle') : '';
+                    $articles[i].classList.add('activeArticle');
+                }
+            }
+
+            //console.log('scroll', scrollTop, currentBodyScrollPoint);
+
+            clearTimeout(bodyScrollTimeout);
+            bodyScrollTimeout = setTimeout(function() {
+                console.log('timeout', scrollTop, currentBodyScrollPoint);
+                scrollTo(document.body, currentBodyScrollPoint+0, 300);
+            }, 310);
+        });
+
+    </script>
+</body>
+</html>

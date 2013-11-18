@@ -1,0 +1,28 @@
+{
+  "name": "ghostrider",
+  "version": "0.0.0",
+  "homepage": "https://github.com/k9ordon/ghostrider",
+  "authors": [
+    "Klemens Gordon <github@k94n.com>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery-mousewheel": "~3.1.4",
+    "Background-Check": "git://github.com/kennethcachia/Background-Check.git#~1.1.2",
+    "jquery.hotkeys": "jeresig/jquery.hotkeys#~0.1.0",
+    "color-thief": "*",
+    "ftcolumnflow": "git://github.com/ftlabs/ftcolumnflow.git#~0.2.4",
+    "jquery.columnizer": "~1.6.0",
+    "Vague.js": "git://github.com/GianlucaGuarini/Vague.js.git#~0.0.2",
+    "Blur.js": "git://github.com/jakiestfu/Blur.js.git",
+    "hammerjs": "~1.0.5"
+  }
+}
