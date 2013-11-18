@@ -1,10 +1,32 @@
 # Ghost Rayder 0.5
 
-A ghost theme - currently developed for latest webkit and ios devices.
+A ghost theme - currently developed for **latest webkit** and ios devices.
+
+## Features
+
+- drag, scroll, swipe or touch article navigation (keyboard too! up,down,left,right) 
+- focused full screen articles
+- vertical text column layout for optimal screen usage
+- device responsive concept
+- a few color UI Scheme
+- or autocoloring ui (dominant colored, light or dark interface via blog cover image)
+- autocoloring article header column (dominant colored background via first article images)
+
+### Upcoming for 1.0
+
+- modern browser support (optimizing Android, Firefox, IE10)
+- resource handling (suspend not displayed articles/imgs
+- overview (article "scrollbar", column index)
+- resize/orientation change handling/bugfixing
+- jquery.columnizer bugfixing
+
+## Screenshots
 
 ![Header Screenshot](/screens/header.png)
 ![Article Screenshot](/screens/article.png)
 ![Article Read Screenshot](/screens/read.png)
+
+### Mobile
 
 ![Header iPhone Sized Screenshot](/screens/header_mobile.png)
 ![Article iPhone Sized Screenshot](/screens/article_mobile.png)
