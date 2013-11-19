@@ -19,7 +19,9 @@ A ghost theme - currently developed for **latest webkit** and ios devices.
 - overview (article "scrollbar", column index)
 - social icons integration
 
-## Screenshots
+## Preview
+
+![Navigating on IOS](https://raw.github.com/k9ordon/ghostrayder/master/screens/navigating_ios.gif)
 
 ![Header Screenshot](/screens/header.png)
 ![Article Screenshot](/screens/article.png)
