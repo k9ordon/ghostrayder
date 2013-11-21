@@ -1423,6 +1423,20 @@ var MMCQ = (function() {
 			options.width = defaults.width;
 		}
 	}
+		
+	/**
+	 * appending a text node to a <table> will
+	 * cause a jquery crash.
+	 * so wrap all append() calls and revert to
+	 * a simple appendChild() in case it fails
+	 */
+	function appendSafe($target, $elem){
+		try{
+			$target.append($elem);
+		}catch(e){
+			$target[0].appendChild($elem[0]);
+		}
+	}
 
     return this.each(function() {
 		var $inBox = options.target ? $(options.target) : $(this);
@@ -1439,7 +1453,7 @@ var MMCQ = (function() {
 
 		var adjustment = 0;
 
-		$cache.append($(this).contents().clone(true));
+		appendSafe($cache, $(this).contents().clone(true));
 
 		// images loading after dom load
 		// can screw up the column heights,
@@ -1453,7 +1467,7 @@ var MMCQ = (function() {
 					var func = function($inBox,$cache){ return function(){
 							if(!$inBox.data("firstImageLoaded")){
 								$inBox.data("firstImageLoaded", "true");
-								$inBox.empty().append($cache.children().clone(true));
+								appendSafe($inBox.empty(), $cache.children().clone(true));
 								$inBox.columnize(options);
 							}
 						};
@@ -1524,7 +1538,7 @@ var MMCQ = (function() {
 					// our column is on a column break, so just end here
 					return;
 				}
-				$putInHere.append(node);
+				appendSafe($putInHere, $(node));
 			}
 			if($putInHere[0].childNodes.length === 0) return;
 
@@ -1545,14 +1559,21 @@ var MMCQ = (function() {
 				var columnText;
 				var latestTextNode = null;
 				while($parentColumn.height() < targetHeight && oText.length){
+					//
+					// it's been brought up that this won't work for chinese
+					// or other languages that don't have the same use of whitespace
+					// as english. This will need to be updated in the future
+					// to better handle non-english languages.
+					//
+					// https://github.com/adamwulf/Columnizer-jQuery-Plugin/issues/124
 					var indexOfSpace = oText.indexOf(' ', counter2);
 					if (indexOfSpace != -1) {
-						columnText = oText.substring(0, oText.indexOf(' ', counter2));
+						columnText = oText.substring(0, indexOfSpace);
 					} else {
 						columnText = oText;
 					}
 					latestTextNode = document.createTextNode(columnText);
-					$putInHere.append(latestTextNode);
+					appendSafe($putInHere, $(latestTextNode));
 
 					if(oText.length > counter2 && indexOfSpace != -1){
 						oText = oText.substring(indexOfSpace);
@@ -1575,7 +1596,7 @@ var MMCQ = (function() {
 			if($pullOutHere.contents().length){
 				$pullOutHere.prepend($item);
 			}else{
-				$pullOutHere.append($item);
+				appendSafe($pullOutHere, $item);
 			}
 
 			return $item[0].nodeType == 3;
@@ -1600,7 +1621,7 @@ var MMCQ = (function() {
 				var $cloneMe = $pullOutHere.contents(":first");
 				//
 				// make sure we're splitting an element
-				if($cloneMe.get(0).nodeType != 1) return;
+				if( typeof $cloneMe.get(0) == 'undefined' || $cloneMe.get(0).nodeType != 1 ) return;
 
 				//
 				// clone the node with all data and events
@@ -1612,20 +1633,20 @@ var MMCQ = (function() {
 					//
 					// ok, we have a columnbreak, so add it into
 					// the column and exit
-					$putInHere.append($clone);
+					appendSafe($putInHere, $clone);
 					$cloneMe.remove();
 				}else if (manualBreaks){
 					// keep adding until we hit a manual break
-					$putInHere.append($clone);
+					appendSafe($putInHere, $clone);
 					$cloneMe.remove();
 				}else if($clone.get(0).nodeType == 1 && !$clone.hasClass(prefixTheClassName("dontend"))){
-					$putInHere.append($clone);
+					appendSafe($putInHere, $clone);
 					if($clone.is("img") && $parentColumn.height() < targetHeight + 20){
 						//
 						// we can't split an img in half, so just add it
 						// to the column and remove it from the pullOutHere section
 						$cloneMe.remove();
-					}else if(!$cloneMe.hasClass(prefixTheClassName("dontsplit")) && $parentColumn.height() < targetHeight + 20){
+					}else if($cloneMe.hasClass(prefixTheClassName("dontsplit")) && $parentColumn.height() < targetHeight + 20){
 						//
 						// pretty close fit, and we're not allowed to split it, so just
 						// add it to the column, remove from pullOutHere, and be done
@@ -1646,6 +1667,13 @@ var MMCQ = (function() {
 							// this node still has non-text nodes to split
 							// add the split class and then recur
 							$cloneMe.addClass(prefixTheClassName("split"));
+							
+							//if this node was ol element, the child should continue the number ordering
+							if($cloneMe.get(0).tagName == 'OL'){
+								var startWith = $clone.get(0).childElementCount + $clone.get(0).start;
+								$cloneMe.attr('start',startWith+1);
+							}
+							
 							if($cloneMe.children().length){
 								split($clone, $cloneMe, $parentColumn, targetHeight);
 							}
@@ -1712,7 +1740,7 @@ var MMCQ = (function() {
 				overflow.innerHTML = html;
 
 			}else{
-				$col.append($destroyable);
+				appendSafe($col, $destroyable.contents());
 			}
 			$inBox.data("columnizing", false);
 
@@ -1775,7 +1803,7 @@ var MMCQ = (function() {
 			$inBox.empty();
 			$inBox.append($("<div style='width:" + (Math.floor(100 / numCols))+ "%; float: " + options.columnFloat + ";'></div>")); //"
 			$col = $inBox.children(":last");
-			$col.append($cache.clone());
+			appendSafe($col, $cache.clone());
 			maxHeight = $col.height();
 			$inBox.empty();
 
@@ -1937,7 +1965,7 @@ var MMCQ = (function() {
 						// hopefully this'll mean more content fits into
 						// earlier columns, so that the last column
 						// can be shorter than the rest
-						adjustment += 30;
+						adjustment += 5;
 
 						targetHeight = targetHeight + 30;
 						if(loopCount == maxLoops-1) maxLoops++;
@@ -1971,6 +1999,8 @@ var MMCQ = (function() {
 			}
 			$inBox.find(prefixTheClassName("column", true)).find(":first" + prefixTheClassName("removeiffirst", true)).remove();
 			$inBox.find(prefixTheClassName("column", true)).find(':last' + prefixTheClassName("removeiflast", true)).remove();
+			$inBox.find(prefixTheClassName("split", true)).find(":first" + prefixTheClassName("removeiffirst", true)).remove();
+			$inBox.find(prefixTheClassName("split", true)).find(':last' + prefixTheClassName("removeiflast", true)).remove();
 			$inBox.data("columnizing", false);
 
 			if(options.overflow){
