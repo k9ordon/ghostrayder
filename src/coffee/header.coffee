@@ -3,12 +3,15 @@ class Header
         @dom()
         @events()
 
-        if(@$headerImg)
+        if(@$headerImg.length > 0)
             if (@$headerImg.get(0).complete)
                 @headerDesign()
             else
                 @$headerImg.load () ->
                     app.header.headerDesign()
+        else
+            @app.$body.addClass 'ready'
+
 
     dom: ->
         @$header = $('body > header')
@@ -26,7 +29,6 @@ class Header
         console.log 'header design', @$headerCover, @app.wHeight
 
         @app.$body.removeClass 'ready'
-
         @$headerCover.height @app.wHeight
 
         window.BackgroundCheck.init { 

@@ -502,7 +502,7 @@
       this.app = app;
       this.dom();
       this.events();
-      if (this.$headerImg) {
+      if (this.$headerImg.length > 0) {
         if ((this.$headerImg.get(0).complete)) {
           this.headerDesign();
         } else {
@@ -510,6 +510,8 @@
             return app.header.headerDesign();
           });
         }
+      } else {
+        this.app.$body.addClass('ready');
       }
     }
 
