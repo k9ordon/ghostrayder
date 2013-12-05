@@ -2,6 +2,7 @@
  * Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/)
  * http://cssreset.com
  */
+/* line 17, /Users/k9ordon/Code/ghost-0.3.2/content/themes/ghostrayder/src/sass/eric-meyer-reset.sass */
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
   padding: 0;
@@ -11,22 +12,28 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   vertical-align: baseline; }
 
 /* HTML5 display-role reset for older browsers */
+/* line 27, /Users/k9ordon/Code/ghost-0.3.2/content/themes/ghostrayder/src/sass/eric-meyer-reset.sass */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
   display: block; }
 
+/* line 30, /Users/k9ordon/Code/ghost-0.3.2/content/themes/ghostrayder/src/sass/eric-meyer-reset.sass */
 body {
   line-height: 1; }
 
+/* line 33, /Users/k9ordon/Code/ghost-0.3.2/content/themes/ghostrayder/src/sass/eric-meyer-reset.sass */
 ol, ul {
   list-style: none; }
 
+/* line 36, /Users/k9ordon/Code/ghost-0.3.2/content/themes/ghostrayder/src/sass/eric-meyer-reset.sass */
 blockquote, q {
   quotes: none; }
 
+/* line 40, /Users/k9ordon/Code/ghost-0.3.2/content/themes/ghostrayder/src/sass/eric-meyer-reset.sass */
 blockquote:before, blockquote:after, q:before, q:after {
   content: '';
   content: none; }
 
+/* line 44, /Users/k9ordon/Code/ghost-0.3.2/content/themes/ghostrayder/src/sass/eric-meyer-reset.sass */
 table {
   border-collapse: collapse;
   border-spacing: 0; }
@@ -34,58 +41,70 @@ table {
 @import url("http://fonts.googleapis.com/css?family=Lato:100,400,900)");
 @import url("http://fonts.googleapis.com/css?family=Roboto+Condensed:400,300");
 @import url("http://fonts.googleapis.com/css?family=Playfair+Display:400,700,900,400italic");
+/* line 6, /Users/k9ordon/Code/ghost-0.3.2/content/themes/ghostrayder/src/sass/typo.sass */
 body {
   font-family: 'Lato', sans-serif;
   font-weight: 100;
   font-size: 12px;
   line-height: 24px;
   font-weight: 400; }
+  /* line 17, /Users/k9ordon/Code/ghost-0.3.2/content/themes/ghostrayder/src/sass/typo.sass */
   body h1, body h2 {
     font-weight: 900; }
+  /* line 23, /Users/k9ordon/Code/ghost-0.3.2/content/themes/ghostrayder/src/sass/typo.sass */
   body > header h1, body > header h2 {
     text-transform: uppercase;
     color: black; }
+  /* line 27, /Users/k9ordon/Code/ghost-0.3.2/content/themes/ghostrayder/src/sass/typo.sass */
   body > header h1 {
     font-weight: 100;
     letter-spacing: -1px;
     text-transform: uppercase;
     font-size: 18px; }
+  /* line 33, /Users/k9ordon/Code/ghost-0.3.2/content/themes/ghostrayder/src/sass/typo.sass */
   body > header h2 {
     font-size: 16px; }
+  /* line 38, /Users/k9ordon/Code/ghost-0.3.2/content/themes/ghostrayder/src/sass/typo.sass */
   body > header.activeSnap #header-inner h1 {
     font-size: 32px; }
+  /* line 46, /Users/k9ordon/Code/ghost-0.3.2/content/themes/ghostrayder/src/sass/typo.sass */
   body > main > article header .meta {
     font-size: 14px;
     text-shadow: 1px 1px 0px white; }
+  /* line 50, /Users/k9ordon/Code/ghost-0.3.2/content/themes/ghostrayder/src/sass/typo.sass */
   body > main > article header > h2 {
     font-weight: 100;
     font-size: 38px;
     line-height: 48px;
     letter-spacing: -1px;
     text-shadow: 1px 1px 0px white; }
+  /* line 60, /Users/k9ordon/Code/ghost-0.3.2/content/themes/ghostrayder/src/sass/typo.sass */
   body > main > article > .content, body > main > article > .column-content {
-    font-size: 16px;
-    line-height: 24px;
-    max-height: 1000px; }
+    font-size: 18px;
+    line-height: 32px; }
+    /* line 68, /Users/k9ordon/Code/ghost-0.3.2/content/themes/ghostrayder/src/sass/typo.sass */
     body > main > article > .content a, body > main > article > .column-content a {
       color: black; }
+    /* line 72, /Users/k9ordon/Code/ghost-0.3.2/content/themes/ghostrayder/src/sass/typo.sass */
     body > main > article > .content p, body > main > article > .content img, body > main > article > .column-content p, body > main > article > .column-content img {
-      margin: 0 0 15px;
-      text-align: justify; }
-    body > main > article > .content p, body > main > article > .content .column:after, body > main > article > .column-content p, body > main > article > .column-content .column:after {
-      font-size: 14px; }
-    body > main > article > .content .column.first p:first-child, body > main > article > .column-content .column.first p:first-child {
-      font-size: 18px; }
+      margin: 0 0 15px; }
+    /* line 77, /Users/k9ordon/Code/ghost-0.3.2/content/themes/ghostrayder/src/sass/typo.sass */
+    body > main > article > .content p:first-child, body > main > article > .column-content p:first-child {
+      font-size: 24px;
+      line-height: 36px; }
+  /* line 89, /Users/k9ordon/Code/ghost-0.3.2/content/themes/ghostrayder/src/sass/typo.sass */
   body > main > footer, body > main > .pagination {
     font-size: 24px;
     line-height: 40px;
     font-weight: 900; }
 
+/* line 1, /Users/k9ordon/Code/ghost-0.3.2/content/themes/ghostrayder/src/sass/gui.sass */
 *, *:before, *:after {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
+/* line 6, /Users/k9ordon/Code/ghost-0.3.2/content/themes/ghostrayder/src/sass/gui.sass */
 body, html {
   height: 100%;
   margin: 0;
@@ -95,32 +114,40 @@ body, html {
   overflow: hidden;
   cursor: move; }
 
+/* line 17, /Users/k9ordon/Code/ghost-0.3.2/content/themes/ghostrayder/src/sass/gui.sass */
 ::-webkit-scrollbar {
   width: 40px;
   height: 10px; }
 
+/* line 22, /Users/k9ordon/Code/ghost-0.3.2/content/themes/ghostrayder/src/sass/gui.sass */
 ::-webkit-scrollbar-track {
   background: black; }
 
+/* line 26, /Users/k9ordon/Code/ghost-0.3.2/content/themes/ghostrayder/src/sass/gui.sass */
 ::-webkit-scrollbar-thumb {
   background: red; }
 
+/* line 30, /Users/k9ordon/Code/ghost-0.3.2/content/themes/ghostrayder/src/sass/gui.sass */
 ::-webkit-scrollbar-thumb:window-inactive {
   background: rgba(255, 0, 0, 0.1); }
 
 
+/* line 38, /Users/k9ordon/Code/ghost-0.3.2/content/themes/ghostrayder/src/sass/gui.sass */
 body {
   background-position: top center;
   background-size: cover;
   -webkit-text-size-adjust: 100%; }
 
 @-webkit-keyframes loadingAnimation {
+  /* line 46, /Users/k9ordon/Code/ghost-0.3.2/content/themes/ghostrayder/src/sass/gui.sass */
   0% {
     -webkit-transform: rotate(0deg); }
 
+  /* line 49, /Users/k9ordon/Code/ghost-0.3.2/content/themes/ghostrayder/src/sass/gui.sass */
   100% {
     -webkit-transform: rotate(360deg); } }
 
+/* line 54, /Users/k9ordon/Code/ghost-0.3.2/content/themes/ghostrayder/src/sass/gui.sass */
 body > #loading {
   position: fixed;
   top: 50%;
@@ -135,32 +162,39 @@ body > #loading {
   opacity: 1;
   -webkit-animation: loadingAnimation 30s linear 0 infinite normal; }
 
+/* line 70, /Users/k9ordon/Code/ghost-0.3.2/content/themes/ghostrayder/src/sass/gui.sass */
 body.ready > #loading {
   opacity: 0;
   -webkit-transform: scale(0.5); }
 
+/* line 75, /Users/k9ordon/Code/ghost-0.3.2/content/themes/ghostrayder/src/sass/gui.sass */
 body > header, body > main {
   opacity: 0;
   -webkit-transition: -webkit-transform 0.6s, opacity 1s; }
 
+/* line 80, /Users/k9ordon/Code/ghost-0.3.2/content/themes/ghostrayder/src/sass/gui.sass */
 body.ready > header, body.ready > main {
   opacity: 1; }
 
 
+/* line 91, /Users/k9ordon/Code/ghost-0.3.2/content/themes/ghostrayder/src/sass/gui.sass */
 .bc.background--dark {
   color: white !important;
   border-color: white !important;
   text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.8); }
+/* line 96, /Users/k9ordon/Code/ghost-0.3.2/content/themes/ghostrayder/src/sass/gui.sass */
 .bc.background--light {
   color: black !important;
   border-color: black !important;
   text-shadow: 0px 1px 4px rgba(255, 255, 255, 0.8); }
 
+/* line 105, /Users/k9ordon/Code/ghost-0.3.2/content/themes/ghostrayder/src/sass/gui.sass */
 .avgrund-overlay {
   z-index: 900;
   position: absolute;
   top: 0; }
 
+/* line 113, /Users/k9ordon/Code/ghost-0.3.2/content/themes/ghostrayder/src/sass/gui.sass */
 .avgrundImgHolder .imgHolder {
   position: absolute;
   top: 0;
@@ -170,6 +204,7 @@ body.ready > header, body.ready > main {
   background-size: cover;
   background-position: center center; }
 
+/* line 1, /Users/k9ordon/Code/ghost-0.3.2/content/themes/ghostrayder/src/sass/header.sass */
 body > header {
   position: fixed;
   top: 0;
@@ -178,6 +213,7 @@ body > header {
   z-index: 50;
   text-align: center;
   height: 50px; }
+  /* line 10, /Users/k9ordon/Code/ghost-0.3.2/content/themes/ghostrayder/src/sass/header.sass */
   body > header #titlebar {
     position: fixed;
     height: 50px;
@@ -186,6 +222,7 @@ body > header {
     right: 0;
     z-index: 50;
     overflow: hidden; }
+    /* line 19, /Users/k9ordon/Code/ghost-0.3.2/content/themes/ghostrayder/src/sass/header.sass */
     body > header #titlebar a {
       position: relative;
       z-index: 103;
@@ -201,22 +238,28 @@ body > header {
       font-size: 10px;
       line-height: 10px; }
       @media (max-width: 480px) {
+        /* line 35, /Users/k9ordon/Code/ghost-0.3.2/content/themes/ghostrayder/src/sass/header.sass */
         body > header #titlebar a span {
           display: none; } }
+    /* line 41, /Users/k9ordon/Code/ghost-0.3.2/content/themes/ghostrayder/src/sass/header.sass */
     body > header #titlebar #overview-button {
       float: left; }
+    /* line 45, /Users/k9ordon/Code/ghost-0.3.2/content/themes/ghostrayder/src/sass/header.sass */
     body > header #titlebar #subscrib-button {
       float: right; }
+  /* line 50, /Users/k9ordon/Code/ghost-0.3.2/content/themes/ghostrayder/src/sass/header.sass */
   body > header #header-inner {
     position: relative;
     z-index: 102;
     padding: 0 0;
     -webkit-transition: margin 0.6s; }
+    /* line 57, /Users/k9ordon/Code/ghost-0.3.2/content/themes/ghostrayder/src/sass/header.sass */
     body > header #header-inner #blog-logo {
       position: absolute;
       top: 0;
       left: 50%;
       margin-left: -70px; }
+      /* line 63, /Users/k9ordon/Code/ghost-0.3.2/content/themes/ghostrayder/src/sass/header.sass */
       body > header #header-inner #blog-logo img {
         width: 140px;
         height: 140px;
@@ -226,6 +269,7 @@ body > header {
         -webkit-transition: opacity 0.5s, -webkit-transform 0.6s;
         -webkit-transform: scale(0.1) rotate(0) translate3d(0, 0, 0);
         pointer-events: none; }
+    /* line 76, /Users/k9ordon/Code/ghost-0.3.2/content/themes/ghostrayder/src/sass/header.sass */
     body > header #header-inner h1 {
       line-height: 50px;
       -webkit-transform: translate3d(0, 0, 0);
@@ -239,6 +283,7 @@ body > header {
       @media (max-width: 480px) {
         body > header #header-inner h1 {
           padding: 0 60px; } }
+      /* line 95, /Users/k9ordon/Code/ghost-0.3.2/content/themes/ghostrayder/src/sass/header.sass */
       body > header #header-inner h1:before {
         -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
         opacity: 0;
@@ -247,9 +292,11 @@ body > header {
         margin-left: -25px;
         content: '\25B5';
         -webkit-transform: translate3d(0, 20px, 0) scale(1.4); }
+      /* line 104, /Users/k9ordon/Code/ghost-0.3.2/content/themes/ghostrayder/src/sass/header.sass */
       body > header #header-inner h1:hover:before {
         opacity: 1;
         -webkit-transform: translate3d(0, 0, 0) scale(1); }
+    /* line 110, /Users/k9ordon/Code/ghost-0.3.2/content/themes/ghostrayder/src/sass/header.sass */
     body > header #header-inner h2 {
       -webkit-transform: translate3d(0, 0, 0);
       -webkit-transition: -webkit-transform 0.6s, opacity 0.6s;
@@ -258,8 +305,10 @@ body > header {
       @media (max-width: 480px) {
         body > header #header-inner h2 {
           padding: 0 60px; } }
+    /* line 121, /Users/k9ordon/Code/ghost-0.3.2/content/themes/ghostrayder/src/sass/header.sass */
     body > header #header-inner a {
       color: black; }
+  /* line 126, /Users/k9ordon/Code/ghost-0.3.2/content/themes/ghostrayder/src/sass/header.sass */
   body > header #header-cover {
     pointer-events: none;
     position: absolute;
@@ -275,41 +324,53 @@ body > header {
     -webkit-transform-origin: top center;
     background-size: cover;
     background-position: top center; }
+    /* line 146, /Users/k9ordon/Code/ghost-0.3.2/content/themes/ghostrayder/src/sass/header.sass */
     body > header #header-cover img {
       -webkit-transition: margin 0.6s;
       height: 100%;
       min-width: 100%;
       opacity: 0; }
+  /* line 167, /Users/k9ordon/Code/ghost-0.3.2/content/themes/ghostrayder/src/sass/header.sass */
   body > header.activeSnap #header-inner h1 {
     -webkit-transform: translate3d(0, 260px, 0); }
+    /* line 171, /Users/k9ordon/Code/ghost-0.3.2/content/themes/ghostrayder/src/sass/header.sass */
     body > header.activeSnap #header-inner h1:hover:before {
       opacity: 0; }
+  /* line 175, /Users/k9ordon/Code/ghost-0.3.2/content/themes/ghostrayder/src/sass/header.sass */
   body > header.activeSnap #header-inner h2 {
     -webkit-transform: translate3d(0, 260px, 0);
     opacity: 1; }
+  /* line 180, /Users/k9ordon/Code/ghost-0.3.2/content/themes/ghostrayder/src/sass/header.sass */
   body > header.activeSnap #header-inner #blog-logo img {
     opacity: 1;
     -webkit-transform: scale(1) rotate(0deg) translate3d(0, 100px, 0); }
 
+/* line 196, /Users/k9ordon/Code/ghost-0.3.2/content/themes/ghostrayder/src/sass/header.sass */
 body.web-app #titlebar {
   padding-top: 15px;
   height: 60px; }
+/* line 201, /Users/k9ordon/Code/ghost-0.3.2/content/themes/ghostrayder/src/sass/header.sass */
 body.web-app #header-inner h1 {
   margin-top: 15px; }
 
+/* line 3, /Users/k9ordon/Code/ghost-0.3.2/content/themes/ghostrayder/src/sass/main.sass */
 body.drag > main.ready, body.drag > main.ready > article > .content {
   -webkit-transition: none; }
 
+/* line 7, /Users/k9ordon/Code/ghost-0.3.2/content/themes/ghostrayder/src/sass/main.sass */
 body > main {
   height: 100%;
   position: relative;
   z-index: 40; }
+  /* line 12, /Users/k9ordon/Code/ghost-0.3.2/content/themes/ghostrayder/src/sass/main.sass */
   body > main > *:first-child {
     margin-top: 480px; }
+  /* line 17, /Users/k9ordon/Code/ghost-0.3.2/content/themes/ghostrayder/src/sass/main.sass */
   body > main.ready > article {
     opacity: 1;
     -webkit-transform: scale(0.9);
     -webkit-transition: -webkit-transform 0.6s, opacity 0.6s; }
+  /* line 25, /Users/k9ordon/Code/ghost-0.3.2/content/themes/ghostrayder/src/sass/main.sass */
   body > main > article {
     opacity: 0;
     position: relative;
@@ -321,23 +382,31 @@ body > main {
     -webkit-transform: scale(1);
     -webkit-transform-origin: center center;
     overflow: hidden; }
+    /* line 46, /Users/k9ordon/Code/ghost-0.3.2/content/themes/ghostrayder/src/sass/main.sass */
     body > main > article.activeSnap {
       -webkit-transform: scale(0.95);
       opacity: 1; }
+    /* line 51, /Users/k9ordon/Code/ghost-0.3.2/content/themes/ghostrayder/src/sass/main.sass */
     body > main > article:nth-child(odd) {
       background: #fdfdfd; }
+      /* line 54, /Users/k9ordon/Code/ghost-0.3.2/content/themes/ghostrayder/src/sass/main.sass */
       body > main > article:nth-child(odd) > header {
         background: rgba(253, 253, 253, 0.96); }
+      /* line 57, /Users/k9ordon/Code/ghost-0.3.2/content/themes/ghostrayder/src/sass/main.sass */
       body > main > article:nth-child(odd) > .more {
         border-color: #fdfdfd;
         background: linear-gradient(to left, #fdfdfd 50%, rgba(253, 253, 253, 0.9) 100%); }
+    /* line 63, /Users/k9ordon/Code/ghost-0.3.2/content/themes/ghostrayder/src/sass/main.sass */
     body > main > article:nth-child(even) {
       background: white; }
+      /* line 65, /Users/k9ordon/Code/ghost-0.3.2/content/themes/ghostrayder/src/sass/main.sass */
       body > main > article:nth-child(even) > header {
         background: rgba(255, 255, 255, 0.96); }
+      /* line 68, /Users/k9ordon/Code/ghost-0.3.2/content/themes/ghostrayder/src/sass/main.sass */
       body > main > article:nth-child(even) > .more {
         border-color: white;
         background: linear-gradient(to left, #ffffff 50%, rgba(255, 255, 255, 0.9) 100%); }
+    /* line 76, /Users/k9ordon/Code/ghost-0.3.2/content/themes/ghostrayder/src/sass/main.sass */
     body > main > article > header {
       position: relative;
       z-index: 54;
@@ -347,7 +416,7 @@ body > main {
       -webkit-transition: -webkit-transform 0.6s, opacity 0.4s;
       -webkit-transform: perspective(600) rotateY(-90deg);
       -webkit-transform-origin: center left;
-      width: 320px;
+      width: 30%;
       min-height: 100%;
       overflow: hidden;
       float: left;
@@ -357,13 +426,16 @@ body > main {
       @media (max-width: 600px) {
         body > main > article > header {
           padding: 50px 0 20px 0; } }
+      /* line 105, /Users/k9ordon/Code/ghost-0.3.2/content/themes/ghostrayder/src/sass/main.sass */
       body > main > article > header.activeSnap {
         opacity: 1;
         -webkit-transform: perspective(600) rotateY(0deg); }
+      /* line 110, /Users/k9ordon/Code/ghost-0.3.2/content/themes/ghostrayder/src/sass/main.sass */
       body > main > article > header .meta {
         position: relative;
         z-index: 55;
         height: 100%; }
+        /* line 115, /Users/k9ordon/Code/ghost-0.3.2/content/themes/ghostrayder/src/sass/main.sass */
         body > main > article > header .meta section {
           margin: 0;
           line-height: 30px;
@@ -373,6 +445,7 @@ body > main {
           margin: 5px 0 0;
           padding: 0 20px 0 20px;
           font-size: 14px; }
+          /* line 129, /Users/k9ordon/Code/ghost-0.3.2/content/themes/ghostrayder/src/sass/main.sass */
           body > main > article > header .meta section span {
             border-top: 1px dotted gray;
             padding-top: 15px;
@@ -382,12 +455,16 @@ body > main {
             font-size: 12px;
             color: darkgrey;
             text-transform: uppercase; }
+          /* line 141, /Users/k9ordon/Code/ghost-0.3.2/content/themes/ghostrayder/src/sass/main.sass */
           body > main > article > header .meta section a {
             text-decoration: none; }
+          /* line 145, /Users/k9ordon/Code/ghost-0.3.2/content/themes/ghostrayder/src/sass/main.sass */
           body > main > article > header .meta section.author {
             width: 100%; }
+          /* line 153, /Users/k9ordon/Code/ghost-0.3.2/content/themes/ghostrayder/src/sass/main.sass */
           body > main > article > header .meta section.tags {
             width: 100%; }
+      /* line 160, /Users/k9ordon/Code/ghost-0.3.2/content/themes/ghostrayder/src/sass/main.sass */
       body > main > article > header h2 {
         position: relative;
         max-width: 100%;
@@ -397,9 +474,11 @@ body > main {
           body > main > article > header h2 {
             max-height: 215px;
             overflow: hidden; } }
+        /* line 175, /Users/k9ordon/Code/ghost-0.3.2/content/themes/ghostrayder/src/sass/main.sass */
         body > main > article > header h2 a {
           color: black;
           text-decoration: none; }
+      /* line 181, /Users/k9ordon/Code/ghost-0.3.2/content/themes/ghostrayder/src/sass/main.sass */
       body > main > article > header .coverImg {
         position: absolute;
         z-index: 54;
@@ -407,6 +486,7 @@ body > main {
         left: -20%;
         width: 140%;
         min-height: 140%; }
+      /* line 194, /Users/k9ordon/Code/ghost-0.3.2/content/themes/ghostrayder/src/sass/main.sass */
       body > main > article > header .header-cover {
         position: absolute;
         z-index: 54;
@@ -414,10 +494,13 @@ body > main {
         left: 0;
         right: 0;
         bottom: 0; }
+    /* line 207, /Users/k9ordon/Code/ghost-0.3.2/content/themes/ghostrayder/src/sass/main.sass */
     body > main > article.column-ready .content {
       opacity: 0; }
+    /* line 210, /Users/k9ordon/Code/ghost-0.3.2/content/themes/ghostrayder/src/sass/main.sass */
     body > main > article.column-ready .column-content {
       opacity: 1; }
+      /* line 214, /Users/k9ordon/Code/ghost-0.3.2/content/themes/ghostrayder/src/sass/main.sass */
       body > main > article.column-ready .column-content > .column:after {
         color: darkgrey;
         display: block;
@@ -427,24 +510,24 @@ body > main {
         line-height: 10px;
         font-weight: 900;
         font-size: 18px; }
+      /* line 227, /Users/k9ordon/Code/ghost-0.3.2/content/themes/ghostrayder/src/sass/main.sass */
       body > main > article.column-ready .column-content > .column:last-of-type:after {
         content: '\220E'; }
+    /* line 235, /Users/k9ordon/Code/ghost-0.3.2/content/themes/ghostrayder/src/sass/main.sass */
     body > main > article > .content {
-      position: absolute;
-      top: 0px;
-      left: 0px;
-      z-index: 51;
       height: 100%;
       opacity: 1;
-      background: red;
-      width: 320px;
-      padding: 80px 10px 100px;
+      width: 70%;
+      padding: 100px 100px 100px;
       margin: 0 0 0 325px;
-      overflow: hidden;
+      overflow-x: hidden;
+      overflow-y: auto;
       -webkit-transition: -webkit-transform 0.6s, margin 0.5s, position 0.5s; }
+      /* line 251, /Users/k9ordon/Code/ghost-0.3.2/content/themes/ghostrayder/src/sass/main.sass */
       body > main > article > .content img {
         max-width: 100%;
         max-height: 80%; }
+    /* line 257, /Users/k9ordon/Code/ghost-0.3.2/content/themes/ghostrayder/src/sass/main.sass */
     body > main > article > .column-content {
       position: absolute;
       top: 0px;
@@ -455,28 +538,36 @@ body > main {
       opacity: 0;
       overflow: hidden;
       -webkit-transition: -webkit-transform 0.6s, margin 0.5s, position 0.5s; }
+      /* line 274, /Users/k9ordon/Code/ghost-0.3.2/content/themes/ghostrayder/src/sass/main.sass */
       body > main > article > .column-content > .column {
         border-right: 1px dotted lightgray;
         overflow: hidden; }
+        /* line 277, /Users/k9ordon/Code/ghost-0.3.2/content/themes/ghostrayder/src/sass/main.sass */
         body > main > article > .column-content > .column.first p:first-child {
           font-weight: 900; }
+      /* line 282, /Users/k9ordon/Code/ghost-0.3.2/content/themes/ghostrayder/src/sass/main.sass */
       body > main > article > .column-content .column > * {
         padding: 0 25px; }
+      /* line 286, /Users/k9ordon/Code/ghost-0.3.2/content/themes/ghostrayder/src/sass/main.sass */
       body > main > article > .column-content .disqus {
         display: block;
         min-height: 500px;
         width: 100%;
         height: 100%; }
+      /* line 294, /Users/k9ordon/Code/ghost-0.3.2/content/themes/ghostrayder/src/sass/main.sass */
       body > main > article > .column-content img {
         max-width: 100%;
         max-height: 80%;
         -webkit-transition: -webkit-transform 0.3s, box-shadow 0.3s;
         -webkit-transform: scale(1);
         cursor: pointer; }
+        /* line 303, /Users/k9ordon/Code/ghost-0.3.2/content/themes/ghostrayder/src/sass/main.sass */
         body > main > article > .column-content img:hover {
           -webkit-transform: scale(1.1); }
+    /* line 309, /Users/k9ordon/Code/ghost-0.3.2/content/themes/ghostrayder/src/sass/main.sass */
     body > main > article > .entry {
       display: none; }
+    /* line 313, /Users/k9ordon/Code/ghost-0.3.2/content/themes/ghostrayder/src/sass/main.sass */
     body > main > article > .more {
       position: absolute;
       top: 0;
@@ -493,6 +584,7 @@ body > main {
       @media (max-width: 600px) {
         body > main > article > .more {
           opacity: 0; } }
+      /* line 332, /Users/k9ordon/Code/ghost-0.3.2/content/themes/ghostrayder/src/sass/main.sass */
       body > main > article > .more > .more-button {
         position: absolute;
         z-index: 54;
@@ -508,15 +600,19 @@ body > main {
         text-transform: uppercase;
         font-weight: bold;
         font-size: 12px; }
+        /* line 348, /Users/k9ordon/Code/ghost-0.3.2/content/themes/ghostrayder/src/sass/main.sass */
         body > main > article > .more > .more-button span {
           position: absolute;
           font-size: 20px;
           right: 30px;
           font-weight: 100; }
+    /* line 357, /Users/k9ordon/Code/ghost-0.3.2/content/themes/ghostrayder/src/sass/main.sass */
     body > main > article.readArticle {
       -webkit-transform: scale(1); }
+      /* line 363, /Users/k9ordon/Code/ghost-0.3.2/content/themes/ghostrayder/src/sass/main.sass */
       body > main > article.readArticle > .more {
         -webkit-transform: translate3d(0, 0, 0) perspective(600) rotateY(90deg); }
+  /* line 372, /Users/k9ordon/Code/ghost-0.3.2/content/themes/ghostrayder/src/sass/main.sass */
   body > main .next-article, body > main .prev-article {
     display: block;
     z-index: 49;
@@ -525,6 +621,7 @@ body > main {
     height: 0;
     -webkit-transition: opacity 1s;
     position: relative; }
+    /* line 383, /Users/k9ordon/Code/ghost-0.3.2/content/themes/ghostrayder/src/sass/main.sass */
     body > main .next-article a, body > main .prev-article a {
       text-align: center;
       position: absolute;
@@ -539,27 +636,34 @@ body > main {
       white-space: nowrap;
       text-overflow: ellipsis;
       overflow: hidden; }
+      /* line 400, /Users/k9ordon/Code/ghost-0.3.2/content/themes/ghostrayder/src/sass/main.sass */
       body > main .next-article a span, body > main .prev-article a span {
         font-weight: 900;
         font-size: 24px;
         font-weight: 100;
         position: relative;
         top: 2px; }
+  /* line 411, /Users/k9ordon/Code/ghost-0.3.2/content/themes/ghostrayder/src/sass/main.sass */
   body > main .prev-article {
     display: none; }
+  /* line 414, /Users/k9ordon/Code/ghost-0.3.2/content/themes/ghostrayder/src/sass/main.sass */
   body > main .next-article {
     opacity: 1; }
+  /* line 418, /Users/k9ordon/Code/ghost-0.3.2/content/themes/ghostrayder/src/sass/main.sass */
   body > main .pagination {
     padding: 180px 130px;
     text-align: center;
     color: white; }
+    /* line 423, /Users/k9ordon/Code/ghost-0.3.2/content/themes/ghostrayder/src/sass/main.sass */
     body > main .pagination a {
       color: white; }
 
 
+/* line 432, /Users/k9ordon/Code/ghost-0.3.2/content/themes/ghostrayder/src/sass/main.sass */
 body.tipNext > main {
   margin-top: -50px; }
 
+/* line 1, /Users/k9ordon/Code/ghost-0.3.2/content/themes/ghostrayder/src/sass/footer.sass */
 body > main > footer {
   position: relative;
   height: 100%;
@@ -567,11 +671,14 @@ body > main > footer {
   text-align: center;
   padding: 200px 0;
   overflow: hidden; }
+  /* line 10, /Users/k9ordon/Code/ghost-0.3.2/content/themes/ghostrayder/src/sass/footer.sass */
   body > main > footer #footer-inner {
     position: relative;
     z-index: 41; }
+    /* line 13, /Users/k9ordon/Code/ghost-0.3.2/content/themes/ghostrayder/src/sass/footer.sass */
     body > main > footer #footer-inner a {
       color: white; }
+  /* line 18, /Users/k9ordon/Code/ghost-0.3.2/content/themes/ghostrayder/src/sass/footer.sass */
   body > main > footer > img {
     display: none;
     position: absolute;

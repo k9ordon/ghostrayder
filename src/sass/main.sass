@@ -87,7 +87,7 @@ body > main {
 
             //border-bottom: 3px solid rgba($accentColor,0.2);
 
-            width:320px;
+            width:30%;
             min-height: 100%;
             overflow: hidden;
             //background:green;
@@ -233,21 +233,18 @@ body > main {
         }
 
         > .content {
-            position: absolute;
-            top:0px;
-            left:0px;
-            z-index: 51;
             height: 100%;
 
             opacity: 1;
 
-            background: red;
+            width: 70%;
+            //border:1px solid green;
 
-            width: 320px;
-            padding: $headerStickyHeight+30px 10px $headerStickyHeight*2;
+            padding: $headerStickyHeight+50px 100px $headerStickyHeight*2;
             margin: 0 0 0 325px;
 
-            overflow: hidden;
+            overflow-x: hidden;
+            overflow-y: auto;
 
             -webkit-transition: -webkit-transform 0.6s, margin 0.5s, position 0.5s;
 
