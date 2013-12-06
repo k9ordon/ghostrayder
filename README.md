@@ -67,3 +67,4 @@ based on npm, grunt & bower
 
 - [![Dependency Status](https://gemnasium.com/k9ordon/ghostrayder.png)](https://gemnasium.com/k9ordon/ghostrayder)
 - [coffeedoc Documentation](http://coffeedoc.info/github/k9ordon/ghostrayder/master/)
+- [![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/k9ordon/ghostrayder/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
