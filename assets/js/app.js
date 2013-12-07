@@ -601,7 +601,23 @@
       this.$content.find('p:empty').remove();
       this.$content.find('table, thead, tbody, tfoot, colgroup, caption, label, legend, script, style, textarea, button, object, embed, tr, th, td, li, h1, h2, h3, h4, h5, h6, form').addClass('dontsplit');
       this.$content.find('h1, h2, h3, h4, h5, h6').addClass('dontend');
-      return this.$content.find('br').addClass('removeiflast').addClass('removeiffirst');
+      this.$content.find('br').addClass('removeiflast').addClass('removeiffirst');
+      return this.$content.eq(0).columnize({
+        width: 800,
+        height: this.app.$body.innerHeight() - 150,
+        lastNeverTallest: true,
+        ignoreImageLoading: false,
+        target: this.$target,
+        doneFunc: function() {
+          $(this.target).parent().find('.column:empty, p:empty').remove();
+          return $(this.target).parent().addClass('column-ready');
+          /*
+              .find('.column:empty, p:empty')
+                  .remove()
+          */
+
+        }
+      });
       /*
       if(@$coverImg.length > 0)
           @appendCoverImg()

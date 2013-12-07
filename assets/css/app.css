@@ -385,8 +385,8 @@ body > main > article {
     -webkit-transition: opacity 0.2s;
     border-top: 1px solid rgba(169, 169, 169, 0.2);
     -webkit-transition: -webkit-transform 0.6s, opacity 0.4s;
-    -webkit-transform: perspective(600) rotateY(-90deg);
-    -webkit-transform-origin: center left;
+    -webkit-transform: perspective(600) rotateX(-90deg);
+    -webkit-transform-origin: top center;
     overflow: hidden;
     overflow: hidden;
     opacity: 1;
@@ -396,7 +396,7 @@ body > main > article {
         padding: 50px 0 20px 0; } }
     body > main > article > header.activeSnap {
       opacity: 1;
-      -webkit-transform: perspective(600) rotateY(0deg); }
+      -webkit-transform: perspective(600) rotateX(0deg); }
     body > main > article > header .meta {
       z-index: 55;
       text-align: center; }
@@ -460,9 +460,9 @@ body > main > article {
     overflow: hidden;
     -webkit-transition: -webkit-transform 0.6s, margin 0.5s, position 0.5s; }
     body > main > article > .column-content > .column {
-      border-right: 1px dotted lightgray;
       overflow: hidden; }
       body > main > article > .column-content > .column.first p:first-child {
+        padding-top: 200px;
         font-weight: 900; }
     body > main > article > .column-content .column > * {
       padding: 0 25px; }
@@ -479,6 +479,21 @@ body > main > article {
       cursor: pointer; }
       body > main > article > .column-content img:hover {
         -webkit-transform: scale(1.1); }
+  body > main > article.column-ready .content {
+    opacity: 0; }
+  body > main > article.column-ready .column-content {
+    opacity: 1; }
+    body > main > article.column-ready .column-content > .column:after {
+      color: darkgrey;
+      display: block;
+      text-align: left;
+      content: '\219D';
+      margin: 0 25px 0;
+      line-height: 10px;
+      font-weight: 900;
+      font-size: 18px; }
+    body > main > article.column-ready .column-content > .column:last-of-type:after {
+      content: '\220E'; }
   body > main > article > .entry {
     display: none; }
   body > main > article > .more {
