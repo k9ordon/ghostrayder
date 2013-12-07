@@ -383,15 +383,14 @@ body > main > article {
     z-index: 54;
     margin: 0;
     -webkit-transition: opacity 0.2s;
-    border-bottom: 1px solid rgba(169, 169, 169, 0.2);
+    border-top: 1px solid rgba(169, 169, 169, 0.2);
     -webkit-transition: -webkit-transform 0.6s, opacity 0.4s;
     -webkit-transform: perspective(600) rotateY(-90deg);
     -webkit-transform-origin: center left;
-    min-height: 30%;
     overflow: hidden;
     overflow: hidden;
     opacity: 1;
-    padding: 60px 0 20px 20px; }
+    padding: 90px 0 20px 20px; }
     @media (max-width: 600px) {
       body > main > article > header {
         padding: 50px 0 20px 0; } }

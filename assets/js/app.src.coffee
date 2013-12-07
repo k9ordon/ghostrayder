@@ -487,6 +487,7 @@ class Header
         $("<style type='text/css'>"+
             "body > main > article > header .meta section.tags, "+
             "body > main > article > header .meta section span, "+
+            "body > main > article > header .meta section a, "+
             "body > main .next-article a,"+
             "body > main > article > .column-content a, "+
             "body > main > article > .column-content b "+
