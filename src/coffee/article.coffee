@@ -36,6 +36,25 @@ class Article
         @$content.find('h1, h2, h3, h4, h5, h6').addClass('dontend');
         @$content.find('br').addClass('removeiflast').addClass('removeiffirst');
 
+        @$content.eq(0).columnize { 
+           width: 800, 
+           height: @app.$body.innerHeight()-150, 
+           lastNeverTallest: true, 
+           ignoreImageLoading: false,
+           target: @$target,
+           doneFunc: () ->
+               #console.log 'column done', $(@.target).parent().find('.column:empty, p:empty')
+               $(@.target).parent().find('.column:empty, p:empty').remove()
+               
+               $(@.target)
+                   .parent()
+                   .addClass 'column-ready'
+                   ###
+                   .find('.column:empty, p:empty')
+                       .remove()
+                   ###
+        }
+
         ###
         if(@$coverImg.length > 0)
             @appendCoverImg()
