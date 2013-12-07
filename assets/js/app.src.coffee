@@ -487,6 +487,7 @@ class Header
         $("<style type='text/css'>"+
             "body > main > article > header .meta section.tags, "+
             "body > main > article > header .meta section span, "+
+            "body > main > article > header .meta section a, "+
             "body > main .next-article a,"+
             "body > main > article > .column-content a, "+
             "body > main > article > .column-content b "+
@@ -564,25 +565,6 @@ class Article
         @$content.find('table, thead, tbody, tfoot, colgroup, caption, label, legend, script, style, textarea, button, object, embed, tr, th, td, li, h1, h2, h3, h4, h5, h6, form').addClass('dontsplit');
         @$content.find('h1, h2, h3, h4, h5, h6').addClass('dontend');
         @$content.find('br').addClass('removeiflast').addClass('removeiffirst');
-
-        @$content.eq(0).columnize { 
-            width: 320, 
-            height: @app.$body.innerHeight()-150, 
-            lastNeverTallest: true, 
-            ignoreImageLoading: false,
-            target: @$target,
-            doneFunc: () ->
-                #console.log 'column done', $(@.target).parent().find('.column:empty, p:empty')
-                $(@.target).parent().find('.column:empty, p:empty').remove()
-                
-                $(@.target)
-                    .parent()
-                    .addClass 'column-ready'
-                    ###
-                    .find('.column:empty, p:empty')
-                        .remove()
-                    ###
-        }
 
         ###
         if(@$coverImg.length > 0)

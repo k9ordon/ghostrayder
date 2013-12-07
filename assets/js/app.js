@@ -549,7 +549,7 @@
       colorThief = new window.ColorThief();
       headerColors = colorThief.getPalette(this.$headerImg.get(0), 2);
       headerColor = colorThief.getColor(this.$headerImg.get(0));
-      $("<style type='text/css'>" + "body > main > article > header .meta section.tags, " + "body > main > article > header .meta section span, " + "body > main .next-article a," + "body > main > article > .column-content a, " + "body > main > article > .column-content b " + "{ color:rgb(" + (headerColors[2].join(',')) + "); }" + "body > main > article > .more > .more-button, " + "body > main > article.column-ready > .column-content > .column:after, " + "body > main > article > header h2 a, " + "body > main > article > .column-content h2, " + "body > main > article > .column-content h3 " + "{ color:rgb(" + (headerColors[0].join(',')) + "); }" + "body > main > article > .column-content > .column, " + "body > main > article > .more > .more-button, " + "body > main > article > header " + "{ border-color:rgb(" + (headerColors[0].join(',')) + "); }" + "body " + "{ background-color:rgb(" + (headerColor.join(',')) + "); }" + "#titlebar " + "{ background-color:rgba(" + (headerColor.join(',')) + ",0.6); }" + " </style>").appendTo("head");
+      $("<style type='text/css'>" + "body > main > article > header .meta section.tags, " + "body > main > article > header .meta section span, " + "body > main > article > header .meta section a, " + "body > main .next-article a," + "body > main > article > .column-content a, " + "body > main > article > .column-content b " + "{ color:rgb(" + (headerColors[2].join(',')) + "); }" + "body > main > article > .more > .more-button, " + "body > main > article.column-ready > .column-content > .column:after, " + "body > main > article > header h2 a, " + "body > main > article > .column-content h2, " + "body > main > article > .column-content h3 " + "{ color:rgb(" + (headerColors[0].join(',')) + "); }" + "body > main > article > .column-content > .column, " + "body > main > article > .more > .more-button, " + "body > main > article > header " + "{ border-color:rgb(" + (headerColors[0].join(',')) + "); }" + "body " + "{ background-color:rgb(" + (headerColor.join(',')) + "); }" + "#titlebar " + "{ background-color:rgba(" + (headerColor.join(',')) + ",0.6); }" + " </style>").appendTo("head");
       /*
       @$headerCover.blurjs({
           source: 'body',
@@ -601,23 +601,7 @@
       this.$content.find('p:empty').remove();
       this.$content.find('table, thead, tbody, tfoot, colgroup, caption, label, legend, script, style, textarea, button, object, embed, tr, th, td, li, h1, h2, h3, h4, h5, h6, form').addClass('dontsplit');
       this.$content.find('h1, h2, h3, h4, h5, h6').addClass('dontend');
-      this.$content.find('br').addClass('removeiflast').addClass('removeiffirst');
-      return this.$content.eq(0).columnize({
-        width: 320,
-        height: this.app.$body.innerHeight() - 150,
-        lastNeverTallest: true,
-        ignoreImageLoading: false,
-        target: this.$target,
-        doneFunc: function() {
-          $(this.target).parent().find('.column:empty, p:empty').remove();
-          return $(this.target).parent().addClass('column-ready');
-          /*
-              .find('.column:empty, p:empty')
-                  .remove()
-          */
-
-        }
-      });
+      return this.$content.find('br').addClass('removeiflast').addClass('removeiffirst');
       /*
       if(@$coverImg.length > 0)
           @appendCoverImg()
