@@ -1,6 +1,6 @@
-# Ghost Rayder 0.5
+# Ghost Rayder - 0.5 Prerelease
 
-A ghost theme - currently developed for **latest webkit** and ios devices.
+A ghost theme - currently in concept-stage developed for **latest webkit** and ios devices.
 
 ## Features
 
